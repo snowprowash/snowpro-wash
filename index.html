@@ -12,24 +12,20 @@
       background: linear-gradient(to bottom right, #e0f0ff, #f0fff8);
       color: #222;
     }
-
     header {
       padding: 80px 20px 40px;
       text-align: center;
     }
-
     header h1 {
       font-size: 2.4rem;
       font-weight: 700;
       margin-bottom: 16px;
     }
-
     header p {
       font-size: 1.1rem;
       color: #444;
       margin-bottom: 30px;
     }
-
     .cta-button {
       background-color: #d0fd3e;
       color: #222;
@@ -41,11 +37,9 @@
       cursor: pointer;
       transition: background-color 0.3s ease;
     }
-
     .cta-button:hover {
       background-color: #c0ec2d;
     }
-
     .features {
       display: flex;
       flex-direction: column;
@@ -55,26 +49,49 @@
       gap: 30px;
       padding: 0 20px;
     }
-
     .feature {
       display: flex;
       align-items: center;
       gap: 20px;
       max-width: 700px;
     }
-
     .feature-icon {
       font-size: 32px;
     }
-
     .feature-text {
       font-size: 1rem;
       font-weight: 500;
     }
-
-    footer {
+    section.banner {
       text-align: center;
-      padding: 40px 20px;
+      padding: 40px 0;
+    }
+    section.banner img {
+      width: 90%;
+      border-radius: 12px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+    }
+    section.description, section.get-involved, footer {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+      text-align: center;
+    }
+    button {
+      margin: 10px;
+      padding: 12px 20px;
+      font-size: 14px;
+      font-weight: bold;
+      background-color: #0077b6;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #005f8a;
+    }
+    footer {
       font-size: 14px;
       color: #777;
     }
@@ -85,7 +102,7 @@
   <header>
     <h1>SnowPro Wash NFT</h1>
     <p>Empowering Motorcycle Cleaning with NFT Innovation & Passive Income</p>
-    <a href="#contact"><button class="cta-button">Get In Touch</button></a>
+    <a href="#get-involved"><button class="cta-button">Get In Touch</button></a>
   </header>
 
   <section class="features">
@@ -107,8 +124,28 @@
     </div>
   </section>
 
-  <footer id="contact">
-    <p>Contact: info@snowprowash.com</p>
+  <section class="banner">
+    <img src="hed.png" alt="SnowPro Wash Banner" />
+  </section>
+
+  <section class="description">
+    <h2>What is SnowPro Wash NFT?</h2>
+    <p>This NFT supports our premium motorcycle wash service using snow foam and modern tech. Holders earn $5/month per NFT for 1 year.</p>
+  </section>
+
+  <section class="get-involved" id="get-involved">
+    <h2>Get Involved</h2>
+    <p>Join our community or contact us to support SnowPro Wash NFT.</p>
+    <a href="https://t.me/snowprocommunity" target="_blank">
+      <button>Join Telegram</button>
+    </a>
+    <a href="https://discord.gg/x5BZCxz2" target="_blank">
+      <button>Join Discord</button>
+    </a>
+  </section>
+
+  <footer>
+    <p>Email: info@snowprowash.com</p>
     <p>&copy; 2025 SnowPro Wash NFT</p>
   </footer>
 
