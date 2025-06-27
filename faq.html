@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SnowPro Wash NFT - FAQ</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #f0f9ff, #e0f7fa);
+      color: #222;
+    }
+    header {
+      background: #0077b6;
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    main {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    h2 {
+      text-align: center;
+      color: #0077b6;
+      margin-bottom: 30px;
+    }
+    .faq-item {
+      background: white;
+      border-radius: 10px;
+      margin-bottom: 15px;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      transition: all 0.3s ease;
+    }
+    .faq-question {
+      font-weight: 600;
+      cursor: pointer;
+      position: relative;
+    }
+    .faq-question::after {
+      content: '+';
+      position: absolute;
+      right: 0;
+      font-size: 24px;
+      transition: transform 0.3s ease;
+    }
+    .faq-item.active .faq-question::after {
+      transform: rotate(45deg);
+    }
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      opacity: 0;
+      transition: max-height 0.4s ease, opacity 0.3s ease;
+      padding-top: 0;
+    }
+    .faq-item.active .faq-answer {
+      max-height: 500px;
+      opacity: 1;
+      padding-top: 10px;
+    }
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      background: #f2f2f2;
+      color: #777;
+      font-size: 14px;
+    }
+    .back-link {
+      text-align: center;
+      margin-top: 30px;
+    }
+    .back-link a {
+      background-color: #0077b6;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+    .back-link a:hover {
+      background-color: #005f8a;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>SnowPro Wash NFT</h1>
+    <p>Frequently Asked Questions</p>
+  </header>
+
+  <main>
+    <h2>FAQ</h2>
+
+    <div class="faq-item">
+      <div class="faq-question">What is SnowPro Wash NFT?</div>
+      <div class="faq-answer">
+        <p>SnowPro Wash NFT is a digital token that supports our premium snow wash motorcycle business and offers holders a share of passive income each month.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">How much passive income do I earn?</div>
+      <div class="faq-answer">
+        <p>Each NFT earns $5/month for a duration of 12 months. Owning more NFTs increases your total earnings.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">How do I buy SnowPro Wash NFT?</div>
+      <div class="faq-answer">
+        <p>You can purchase NFTs through MintGarden or Dexie. Visit the main page and click the Buy buttons provided.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">What blockchain does it use?</div>
+      <div class="faq-answer">
+        <p>SnowPro Wash NFTs are deployed on the Chia blockchain — eco-friendly, secure, and decentralized.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">Is there a whitepaper available?</div>
+      <div class="faq-answer">
+        <p>Yes, our full whitepaper can be downloaded from the main website to understand the project in depth.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-question">Where can I ask more questions?</div>
+      <div class="faq-answer">
+        <p>Join our Telegram or Discord community to connect with us and ask anything!</p>
+      </div>
+    </div>
+
+    <div class="back-link">
+      <a href="index.html">← Back to Main Page</a>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 SnowPro Wash NFT — All rights reserved</p>
+  </footer>
+
+  <script>
+    document.querySelectorAll('.faq-question').forEach(q => {
+      q.addEventListener('click', () => {
+        q.parentElement.classList.toggle('active');
+      });
+    });
+  </script>
+</body>
+</html>
